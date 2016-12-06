@@ -195,6 +195,11 @@ p {
     padding-bottom: 20px;
     }
 }
+@media (max-width:600px) {
+    .tp-bgimg {
+        height: 65% !important;
+    }
+}
 
 .project-subtitle {
 	margin-bottom: 50px;
@@ -232,6 +237,9 @@ p {
 }
 #main-nav .current, .navbar-default .navbar-nav > li > a:hover {
 	color: #e3e448
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background: black;
 }
 .cube {
   background-color: #000000;
@@ -1015,9 +1023,11 @@ nav {
 	}
     .navbar-default .navbar-toggle {
         margin-top: 44px;
+        display: none;
     }
     .navbar-small .navbar-toggle {
         margin-top: 11px;
+        display: block;
     }
 	.navbar-nav>li {
         float: none;
