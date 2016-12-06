@@ -230,7 +230,7 @@ p {
 	-webkit-animation: rotatee 2.0s infinite linear;
 	animation: rotatee 2.0s infinite linear;
 }
-#main-nav .current {
+#main-nav .current, .navbar-default .navbar-nav > li > a:hover {
 	color: #e3e448
 }
 .cube {
