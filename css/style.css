@@ -45,6 +45,13 @@ Table of Contents:
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
 
+
+@font-face{
+	font-family:"Jack";
+	src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b41558bd-2862-46c0-abf7-536d2542fa26.eot?#iefix");
+	src:url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b41558bd-2862-46c0-abf7-536d2542fa26.eot?#iefix") format("eot"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5cee8d6e-89ad-4d8c-a0ac-584d316b15ae.woff2") format("woff2"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/388ef902-2c31-4818-abb1-a40dcd81f6d6.woff") format("woff"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/29c60077-2614-4061-aa8d-5bcfdf7354bb.ttf") format("truetype"),url("https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/76250d27-b353-4f3b-90c6-0ff635fabaab.svg#76250d27-b353-4f3b-90c6-0ff635fabaab") format("svg");
+}
+
 /*----- General ----*/
 html,
 body {
@@ -100,8 +107,8 @@ a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inn
     float: left;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font: normal normal normal 88px/1.4em 'Jack',sans-serif ;
+	color:#FFFFFF;
     color: #1c1c1c;
 }
 h1 small, h2 small, h3 small {
@@ -409,7 +416,6 @@ p {
     }
     h2 {
         font-size: 50px;
-        letter-spacing: 0px;
 
     }
     h2 small {
@@ -618,7 +624,6 @@ p {
 }
 .home-heading {
     font-weight: 700;
-    letter-spacing: 0px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -1089,7 +1094,7 @@ nav {
 .navbar-small .navbar-brand .logo-small {
     position:absolute;
     opacity: 1;
-    margin-top: -8px; 
+    margin-top: -8px;
 }
 /* End Logo Small Black */
 
