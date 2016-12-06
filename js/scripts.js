@@ -180,7 +180,7 @@
         $('*.animated').removeClass('animated')
         $('html').get(0).className = ""
         $('.parallax').each(function(i, e) {
-            e.style = ""
+            e.style.backgroundPosition = ""
         })
         $('.wow.fadeInUp').each(function(i, e) {
             e.style = ""
