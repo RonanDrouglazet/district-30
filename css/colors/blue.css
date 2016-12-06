@@ -11,7 +11,7 @@
 .post-time-section .post-month .month {
 	background-color: #2ac5ee;
 }
-.search-button { 
+.search-button {
     background: #2ac5ee;
 }
 
@@ -30,7 +30,6 @@
 #filters li span:focus,
 .btn-primary,
 .label-primary,
-#contact input.submit,
 .blog-list li:hover,
 .cbp-l-filters-button .cbp-filter-item-active,
 .cbp-l-filters-button .cbp-filter-counter,
@@ -39,7 +38,6 @@
 .pagination > .active > a,
 .progress-bar,
 .btn-primary-full,
-#back-to-top,
 .btn-buy,
 .navbar-default .navbar-toggle .icon-bar,
 .btn-primary:hover,
@@ -49,12 +47,12 @@
 .cbp-l-filters-alignCenter .cbp-filter-counter,
 .cbp-l-filters-alignRight .cbp-filter-item:hover,
 .cbp-l-filters-alignCenter .cbp-filter-item:hover,
-.clients .client .logo-light, 
+.clients .client .logo-light,
 .clients .client a .logo-light,
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus,
 .home-signin .btn-primary-full:hover,
 .cbp-l-loadMore-button .cbp-l-loadMore-button-link:hover,
-.pager li>a:hover, .pager li>a:focus, 
+.pager li>a:hover, .pager li>a:focus,
 .pricing_table .planbox.highlight .prices {
 	background: #2ac5ee;
 }
@@ -75,14 +73,14 @@ figure figcaption a:hover,
 .nav > li > span:focus,
 .navbar-default .navbar-nav > li > a:hover,
 
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus,
-.dropdown-menu > .active > a, 
-.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus,
 .portfolio-links a:hover,
 .portfolio-links .icon:hover,
@@ -102,7 +100,7 @@ footer #social-icons li a:hover,
 .breadcrumb>li+li:before,
 .contact-details-social li a:hover,
 .cbp-l-filters-dropdownList .cbp-filter-item-active,
-.member-list a:hover, 
+.member-list a:hover,
 .connected-icon a:hover h4,
 .connected-icon a:hover span,
 .home-bottom a:hover,
@@ -144,7 +142,7 @@ footer #social-icons li a:hover,
     background: #2ac5ee;
 }
 .btn-effect:hover {
-    background: none; 
+    background: none;
     border-color: #2ac5ee;
     transition: all 0.4s;
 }
