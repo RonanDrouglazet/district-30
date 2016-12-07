@@ -203,7 +203,10 @@ p {
 		top: 350px !important;
 	}
 }
-
+.parallax {
+	/* improve parallax*/
+	transform: scaleZ(1);
+}
 .project-subtitle {
 	margin-bottom: 50px;
     font-size: 14px;
