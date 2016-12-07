@@ -199,6 +199,9 @@ p {
     .tp-bgimg {
         height: 65% !important;
     }
+	.subtitle {
+		top: 350px !important;
+	}
 }
 
 .project-subtitle {
