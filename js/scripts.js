@@ -129,8 +129,8 @@
                 action = $el.attr( 'action' );
             $alert.removeClass( 'alert-danger alert-success' );
             $alert.html( '' );
-
-            if (!$el.find('input#name').val() || !$el.find('input#email').val() || !$el.find('input#subject').val() || !$el.find('input#message').val()) {
+            
+            if (!$el.find('input#name').val() || !$el.find('input#email').val() || !$el.find('input#subject').val() || !$el.find('textarea#comments').val()) {
                 $alert.html( 'Les champs marqués d\'une étoile sont requis' );
                 $alert.addClass( 'alert-danger' ).fadeIn( 500 );
                 return
