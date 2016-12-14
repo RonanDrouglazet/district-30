@@ -120,30 +120,44 @@
     /* -------------------
     Contact form
     ---------------------*/
-    $('#contactform').submit(function(){
-		var action = $(this).attr('action');
-		$("#message").slideUp(250,function() {
-            $('#message').hide();
-            $('#submit')
+
+    $( '#contactform' ).on( 'submit', function( e ) {
+            e.preventDefault();
+            var $el = $( this ),
+                $alert = $el.find( '.form-validation' ),
+                $submit = $el.find( '#submit' ),
+                action = $el.attr( 'action' );
+            $alert.removeClass( 'alert-danger alert-success' );
+            $alert.html( '' );
+
+            if (!$el.find('input#name').val() || !$el.find('input#email').val() || !$el.find('input#subject').val() || !$el.find('input#message').val()) {
+                $alert.html( 'Les champs marqués d\'une étoile sont requis' );
+                $alert.addClass( 'alert-danger' ).fadeIn( 500 );
+                return
+            }
+
+            $submit
                 .after('<img src="img/assets/contact-form-loader.gif" class="loader" />')
                 .attr('disabled','disabled');
-            $.post(action, {
-                name: $('#name').val(),
-                email: $('#email').val(),
-                subject: $('#subject').val(),
-                comments: $('#comments').val(),
-            },
-                function(data){
-                    document.getElementById('message').innerHTML = data;
-                    $('#message').slideDown(250);
-                    $('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
-                    $('#submit').removeAttr('disabled');
-                    if(data.match('success') != null) $('#contactform').slideUp(850, 'easeInOutExpo');
-                }
-            );
-		});
-		return false;
-	});
+
+            $.ajax({
+                type     : 'POST',
+                url      : action,
+                data     : $el.serialize(),
+                success  : function( response ) {
+                    if ( response.status == 'error' ) {
+                        $alert.html( 'Error!' );
+                        $alert.addClass( 'alert-danger' ).fadeIn( 500 );
+                    }
+                    else {
+                        $el.trigger( 'reset' );
+                        $alert.html( 'Success!' );
+                        $alert.addClass( 'alert-success' ).fadeIn( 500 );
+                        $('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+                    }
+                },
+            })
+        });
 
     /* -------------------
     Bootstrap Tooltip, Alert, Tabs
