@@ -553,6 +553,11 @@ p {
         height: 400px;
     }
 }
+@media (min-width:2176px) {
+	#home-revolution-slider .subtitle {
+		top: 550px !important;
+	}
+}
 #home-parallax-fullscreen:after,
 .parallax-section-1:after,
 .parallax-section-2:after,
@@ -808,12 +813,6 @@ nav {
     -o-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     transition: all 0.4s ease;
-}
-@media (min-width: 1360px) {
-    nav { max-width: 1903px; }
-}
-@media (max-width: 1360px) {
-    nav { max-width: 1343px; }
 }
 .navbar {
 	min-height: 55px;
